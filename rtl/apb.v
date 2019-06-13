@@ -112,7 +112,7 @@ module apb(
 	   
 
 	  );
-
+// device management
 //ENABLE WRITE ON TX FIFO
 assign WR_ENA = (PWRITE == 1'b1 & PENABLE == 1'b1 & PADDR == 32'd0 & PSELx == 1'b1)?  1'b1:1'b0;
 
